@@ -29,8 +29,8 @@ class App extends Component {
                         prerenderingSiblingsNumber={0}
                     >
                         <TabBar.Item
-                            title="Life"
-                            key="Life"
+                            title="首页"
+                            key="首页"
                             icon={<div style={{
                                 width: '22px',
                                 height: '22px',
@@ -41,7 +41,7 @@ class App extends Component {
                             selectedIcon={<div style={{
                                 width: '22px',
                                 height: '22px',
-                                background: 'url('+require('./assets/icon/home.svg')+') center center /  24px 24px no-repeat'
+                                background: 'url('+require('./assets/icon/homeon.svg')+') center center /  24px 24px no-repeat'
                             }}
                             />
                             }
@@ -61,7 +61,7 @@ class App extends Component {
                                 <div style={{
                                     width: '22px',
                                     height: '22px',
-                                    background: 'url(https://gw.alipayobjects.com/zos/rmsportal/BTSsmHkPsQSPTktcXyTV.svg) center center /  21px 21px no-repeat'
+                                    background: 'url('+require('./assets/icon/unorderedlist.svg')+') center center /  24px 24px no-repeat'
                                 }}
                                 />
                             }
@@ -69,13 +69,13 @@ class App extends Component {
                                 <div style={{
                                     width: '22px',
                                     height: '22px',
-                                    background: 'url(https://gw.alipayobjects.com/zos/rmsportal/ekLecvKBnRazVLXbWOnE.svg) center center /  21px 21px no-repeat'
+                                    background: 'url('+require('./assets/icon/unorderedliston.svg')+') center center /  24px 24px no-repeat'
                                 }}
                                 />
                             }
-                            title="Koubei"
-                            key="Koubei"
-                            badge={'new'}
+                            title="分类"
+                            key="分类"
+                            // badge={'new'}
                             selected={this.state.selectedTab === 'redTab'}
                             onPress={() => {
                                 this.setState({
@@ -92,7 +92,7 @@ class App extends Component {
                                 <div style={{
                                     width: '22px',
                                     height: '22px',
-                                    background: 'url(https://zos.alipayobjects.com/rmsportal/psUFoAMjkCcjqtUCNPxB.svg) center center /  21px 21px no-repeat'
+                                    background: 'url('+require('./assets/icon/creditcard.svg')+') center center /  24px 24px no-repeat'
                                 }}
                                 />
                             }
@@ -100,13 +100,13 @@ class App extends Component {
                                 <div style={{
                                     width: '22px',
                                     height: '22px',
-                                    background: 'url(https://zos.alipayobjects.com/rmsportal/IIRLrXXrFAhXVdhMWgUI.svg) center center /  21px 21px no-repeat'
+                                    background: 'url('+require('./assets/icon/creditcardon.svg')+') center center /  24px 24px no-repeat'
                                 }}
                                 />
                             }
-                            title="Friend"
-                            key="Friend"
-                            dot
+                            title="票夹"
+                            key="票夹"
+                            // dot
                             selected={this.state.selectedTab === 'greenTab'}
                             onPress={() => {
                                 this.setState({
@@ -118,10 +118,24 @@ class App extends Component {
                             {/* {this.renderContent('Friend')} */}
                         </TabBar.Item>
                         <TabBar.Item
-                            icon={{ uri: 'https://zos.alipayobjects.com/rmsportal/asJMfBrNqpMMlVpeInPQ.svg' }}
-                            selectedIcon={{ uri: 'https://zos.alipayobjects.com/rmsportal/gjpzzcrPMkhfEqgbYvmN.svg' }}
-                            title="My"
-                            key="my"
+                            icon={
+                                <div style={{
+                                    width: '22px',
+                                    height: '22px',
+                                    background: 'url('+require('./assets/icon/user.svg')+') center center /  24px 24px no-repeat'
+                                }}
+                                />
+                            }
+                            selectedIcon={
+                                <div style={{
+                                    width: '22px',
+                                    height: '22px',
+                                    background: 'url('+require('./assets/icon/useron.svg')+') center center /  24px 24px no-repeat'
+                                }}
+                                />
+                            }
+                            title="我的"
+                            key="我的"
                             selected={this.state.selectedTab === 'yellowTab'}
                             onPress={() => {
                                 this.setState({
