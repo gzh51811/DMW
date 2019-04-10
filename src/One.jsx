@@ -34,19 +34,19 @@ class App extends Component {
                             icon={<div style={{
                                 width: '22px',
                                 height: '22px',
-                                background: 'url(https://zos.alipayobjects.com/rmsportal/sifuoDUQdAFKAVcFGROC.svg) center center /  21px 21px no-repeat'
+                                background: 'url('+require('./assets/icon/home.svg')+') center center /  24px 24px no-repeat'
                             }}
                             />
                             }
                             selectedIcon={<div style={{
                                 width: '22px',
                                 height: '22px',
-                                background: 'url(https://zos.alipayobjects.com/rmsportal/iSrlOTqrKddqbOmlvUfq.svg) center center /  21px 21px no-repeat'
+                                background: 'url('+require('./assets/icon/home.svg')+') center center /  24px 24px no-repeat'
                             }}
                             />
                             }
                             selected={this.state.selectedTab === 'blueTab'}
-                            badge={1}
+                            // badge={1}
                             onPress={() => {
                                 this.setState({
                                     selectedTab: 'blueTab',
